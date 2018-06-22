@@ -25,7 +25,7 @@ static const NSUInteger RCTMaxCachableDecodedImageSizeInBytes = 1048576; // 1MB
 static NSString *RCTCacheKeyForImage(NSString *imageTag, CGSize size, CGFloat scale,
                                      RCTResizeMode resizeMode, NSString *responseDate)
 {
-    return [NSString stringWithFormat:@"%@|%g|%g|%g|%zd|%@",
+    return [NSString stringWithFormat:@"%@|%g|%g|%g|%ld|%@",
             imageTag, size.width, size.height, scale, resizeMode, responseDate];
 }
 
